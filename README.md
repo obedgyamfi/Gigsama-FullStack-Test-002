@@ -52,14 +52,15 @@ This project is a chat-based AI application built using Node.js, Express, and SQ
    ```
 3. Set up environment variables .env and .env.local in the /backend and /frontend directories respectively:
    - Create a `.env` file in `/backend` directory and define:
-     ```env
+     ```.env
      LLM_API_KEY=your_openai_api_key
      LLM_MODEL=gpt-4o
      ```
 
     - Create a `.env.local` file in `/frontend` directory and define it as:
-    NEXT_PUBLIC_API_URL=your_backend_api_url (e.g http://localhost:5000)
-
+     ```.env.local
+     NEXT_PUBLIC_API_URL=your_backend_api_url (e.g http://localhost:5000)
+     ```
 4. In the project's root directory, start the server:
    ```sh
    npm start
