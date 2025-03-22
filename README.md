@@ -95,7 +95,7 @@ This project is a chat-based AI application built using Node.js, Express, and SQ
 - Returns the conversation history for a given project.
 
 ## Demo & Live Version
-- If available, provide a link to the live demo: `https://gigsama-full-stack-test-002.vercel.app/`
+- If available, provide a link to the live demo: `[https://gigsama-full-stack-test-002.vercel.app/]`
 
 - Screenshots or sample API requests can be included.
 
