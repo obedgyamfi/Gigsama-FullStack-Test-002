@@ -50,17 +50,17 @@ This project is a chat-based AI application built using Node.js, Express, and SQ
    ```sh
    npm install
    ```
-3. Set up environment variables:
-   - Create a `.env` file and define:
+3. Set up environment variables .env and .env.local in the /backend and /frontend directories respectively:
+   - Create a `.env` file in `/backend` directory and define:
      ```env
      LLM_API_KEY=your_openai_api_key
      LLM_MODEL=gpt-4o
      ```
-4. Initialize the SQLite database:
-   ```sh
-   node scripts/initDatabase.js
-   ```
-5. Start the server:
+
+    - Create a `.env.local` file in `/frontend` directory and define it as:
+    NEXT_PUBLIC_API_URL=your_backend_api_url (e.g http://localhost:5000)
+
+4. In the project's root directory, start the server:
    ```sh
    npm start
    ```
@@ -94,17 +94,21 @@ This project is a chat-based AI application built using Node.js, Express, and SQ
 - Returns the conversation history for a given project.
 
 ## Demo & Live Version
-- If available, provide a link to the live demo: `[Demo Link]`
+- If available, provide a link to the live demo: `https://gigsama-full-stack-test-002-git-main-obedgyamfis-projects.vercel.app`
+
 - Screenshots or sample API requests can be included.
+
+![01-welcome-page](demo_images/01-welcome-page.png)
+![02-new-project-page](demo_images/02-new-project-page.png)
+![03-ai-chat](demo_images/03-ai-chat.png)
+![04-ai-database-generation](demo_images/04-ai-database-generation.png)
+![05-project-history](demo_images/05-project-history.png)
 
 ## Future Enhancements
 - Implement user authentication for personalized chat sessions.
 - Support additional LLM providers.
 - Enhance schema validation and export features.
 
-## License
-This project is licensed under [MIT License](LICENSE).
-
 ## Contributors
-- Your Name (@yourgithub)
+- Obed Gyamfi (@obedgyamfi)
 
