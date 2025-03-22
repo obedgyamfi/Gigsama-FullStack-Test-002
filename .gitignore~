@@ -136,4 +136,4 @@ dist
 .pnp.*
 
 # Database sqlite3
-chat_history.db
+*.db
