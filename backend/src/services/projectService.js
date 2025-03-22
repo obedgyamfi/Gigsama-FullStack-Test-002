@@ -1,6 +1,6 @@
 const { v4: uuidv4 } = require('uuid');
 const Project = require('../models/project');
-const ollamaService = require('./ollama');
+const llmService = require('./llmService');
 
 module.exports = {
   createProject: async (initialMessage = null) => {
@@ -9,7 +9,7 @@ module.exports = {
 
     if (initialMessage) {
       try {
-        name = await ollamaService.generateProjectName(initialMessage);
+        name = await llmService.generateProjectName(initialMessage);
       } catch (error) {
         console.error('Failed to generate project name:', error.message);
         name = `Chat about ${initialMessage.substring(0, 20)}`;
